@@ -1,0 +1,27 @@
+{
+  "name": "appium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha test/specs.js --timeout = 50000",
+    "appium": "appium --chromedriver-executable chromedriver.exe",
+    "update": "node ./node_modules/protractor/bin/webdriver-manager update --gecko=false",
+    "mobile": "protractor config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaALD/Appium.git"
+  },
+  "dependencies": {
+    "protractor": "^5.4.2",
+    "mocha": "^5.2.0",
+    "chai": "^4.2.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimaALD/Appium/issues"
+  },
+  "homepage": "https://github.com/DimaALD/Appium#readme"
+}
